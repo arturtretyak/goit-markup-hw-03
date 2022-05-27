@@ -1,0 +1,222 @@
+/* __________________ All using */
+:root {
+  --blue-color: #2196f3;
+  --black-color: #212121;
+  --gray-color: #757575;
+  --background-color-basic: #2f303a;
+  --background-color-second: #f5f4fa;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--gray-color);
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: calc(42 / 36);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--black-color);
+}
+
+/* _________________ Header styles */
+
+.header {
+  font-weight: 500;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+}
+
+.logo {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  color: var(--blue-color);
+}
+
+.logo-header-span {
+  color: black;
+}
+
+.nav-menu {
+  color: var(--black-color);
+}
+
+.nav-menu a:hover,
+.nav-menu a:focus {
+  color: var(--blue-color);
+}
+
+.contacts-header a:hover,
+.contacts-header a:focus {
+  color: var(--blue-color);
+}
+
+/*_____________________ Main banner  */
+
+.main-banner {
+  background-color: var(--background-color-basic);
+}
+
+.main-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: calc(60 / 44);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: white;
+  -webkit-text-stroke: 1px black;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.button-to-order {
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  background: var(--blue-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(30 / 16);
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  color: white;
+}
+
+.button-to-order:hover,
+.button-to-order:focus {
+  background-color: #124f81;
+}
+
+/* _______________ Benefits section */
+
+.benefits-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: calc(16 / 14);
+  text-transform: uppercase;
+  color: var(--black-color);
+}
+
+/* _____________ What we do section */
+
+/* Our team */
+
+.our-team-section {
+  background-color: var(--background-color-second);
+}
+
+.our-team-section-title,
+.our-team-section-description {
+  font-size: 16px;
+  line-height: calc(19 / 16);
+  text-align: center;
+}
+
+.our-team-section-title {
+  font-weight: 500;
+  color: var(--black-color);
+}
+
+/* __________ Footer */
+
+.footer {
+  background-color: var(--background-color-basic);
+}
+
+.logo-white {
+  color: white;
+}
+
+/* ____________ Address */
+
+.address {
+  font-style: normal;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.address-company {
+  color: white;
+}
+
+/* .address-contact {
+  text-decoration: none;
+  color: var(--gray-color);
+} */
+
+.address a:hover,
+.address a:focus {
+  color: var(--blue-color);
+}
+
+/* ____________________________ PORTFOLIO ________________ */
+/* __________________________ Menu filters buttons */
+
+.menu-filter-button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: calc(26 / 16);
+
+  text-align: center;
+  color: var(--black-color);
+  background-color: var(--background-color-second);
+  border-radius: 4px;
+  border: none;
+}
+
+.menu-button button:hover,
+.menu-button button:focus {
+  background-color: #fff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+/* _____________ Table projects */
+
+.projects-title {
+  font-size: 18px;
+  line-height: calc(36 / 18);
+  letter-spacing: 0.06em;
+  color: var(--black-color);
+}
+
+.projects-text {
+  font-size: 16px;
+  line-height: calc(30 / 16);
+}
