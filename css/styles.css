@@ -3,6 +3,7 @@
   --blue-color: #2196f3;
   --black-color: #212121;
   --gray-color: #757575;
+  --white-color: #ffffff;
   --background-color-basic: #2f303a;
   --background-color-second: #f5f4fa;
   --margin-card: 30px;
@@ -93,6 +94,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--black-color);
+  margin-bottom: 50px;
 }
 
 /* _________________ Header styles */
@@ -110,8 +112,6 @@ body {
   font-size: 26px;
   line-height: calc(31 / 26);
   color: var(--blue-color);
-
-  margin-right: 95px;
 }
 
 .logo-header-span {
@@ -122,6 +122,10 @@ body {
   display: flex;
   align-items: center;
   height: 80px;
+}
+
+.header .logo {
+  margin-right: 95px;
 }
 
 .nav-menu {
@@ -149,6 +153,14 @@ body {
 
 .contacts-header-items {
   display: flex;
+  margin-left: auto;
+}
+
+.nav-menu .link,
+.contacts-header-items .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
 }
 
 .contacts-headers-item:not(:first-child) {
@@ -159,7 +171,8 @@ body {
 
 .main-banner {
   background-color: var(--background-color-basic);
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .main-text {
@@ -173,9 +186,9 @@ body {
   color: white;
   -webkit-text-stroke: 1px black;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  margin-top: 106px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
   max-width: 700px;
 }
 
@@ -197,11 +210,12 @@ body {
   letter-spacing: 0.06em;
 
   color: white;
+  border: none;
 }
 
 .button-to-order:hover,
 .button-to-order:focus {
-  background-color: #124f81;
+  background-color: #188ce8;
 }
 
 /* _______________ Benefits section */
@@ -228,15 +242,10 @@ body {
 }
 
 .list-what-we-do {
-  margin-top: 50px;
   --card-count: 4;
 }
 
 /* Our team */
-
-.container-our-team {
-  padding-top: 50px;
-}
 
 .our-team-section {
   background-color: var(--background-color-second);
@@ -252,14 +261,14 @@ body {
 .our-team-section-title {
   font-weight: 500;
   color: var(--black-color);
-  padding-top: 30px;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.our-team-section-content {
+  padding: 30px;
 }
 
 .card-employer {
-  width: 270px;
-  height: 370px;
-
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -270,15 +279,17 @@ body {
 
 .footer {
   background-color: var(--background-color-basic);
-  height: 250px;
-}
-
-.footer .container {
   padding-top: 60px;
+  padding-bottom: 60px;
 }
 
-.list-address {
-  padding-top: 20px;
+.footer .logo {
+  padding-bottom: 20px;
+  display: block;
+}
+
+.list-address li:not(:last-child) {
+  margin-bottom: 10px;
 }
 
 .logo-white {
@@ -321,17 +332,24 @@ body {
   border-radius: 4px;
   border: none;
 
-  --margin-card: 10px;
+  /* --margin-card: 10px; */
   padding: 5px 20px;
 }
 
 .menu-list {
+  display: flex;
   justify-content: center;
+  margin-bottom: 50px;
+}
+
+.menu-list li:not(:last-child) {
+  margin-right: 10px;
 }
 
 .menu-button button:hover,
 .menu-button button:focus {
-  background-color: #fff;
+  background-color: var(--blue-color);
+  color: var(--white-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -343,22 +361,20 @@ body {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--black-color);
-  padding-left: 25px;
-  padding-top: 20px;
+  margin-bottom: 5px;
 }
 
 .projects-text {
   font-size: 16px;
   line-height: calc(30 / 16);
-  padding-left: 25px;
-}
-
-.projects {
-  padding-top: 35px;
 }
 
 .list-project-item {
   width: 370px;
   height: 405px;
+}
+
+.list-project-content {
+  padding: 20px 25px;
   border: solid 1px #ececec;
 }
